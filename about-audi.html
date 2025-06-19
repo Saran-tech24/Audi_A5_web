@@ -1,0 +1,323 @@
+<!-- About Audi Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DailyRevs</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-white text-white">
+
+  <!-- Navigation -->
+  <header class="navbar flex justify-between items-center bg-gray-800 px-6 py-4 shadow-lg">
+    <a href="Home.html">
+      <img src="https://www.dailyrevs.com/images/logo.png" alt="DailyRevs Logo" class="h-12 w-auto">
+    </a>
+    <nav class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-teal-300">Latest Cars</a>
+      <a href="Makes_&_Models.html" class="hover:text-teal-300">Makes & Models</a>
+      <a href="Search Cars" class="hover:text-teal-300">Search Cars</a>
+      <a href="Blog.html" class="hover:text-teal-300">Blog</a>
+      <a href="Shop.html" class="hover:text-teal-300">Shop</a>
+    </nav>
+  </header>
+
+<section id="about-audi" class="py-16 px-6 md:px-20 bg-gray-900">
+  <h2 class="text-3xl font-semibold mb-6 text-teal-400">Audi AG</h2>
+
+  <div id="read-more-content">
+    <p class="text-lg text-gray-300">
+      Audi AG is a German luxury automotive manufacturer headquartered in Ingolstadt, Bavaria. A subsidiary of the Volkswagen Group, Audi produces premium vehicles globally and has established itself as a leader in innovation and performance.
+    </p>
+
+    <!-- Read More Button -->
+    <button onclick="toggleReadMore()" class="mt-4 px-4 py-2 text-lg font-medium text-teal-400 border border-teal-400 rounded-md transition duration-300 ease-in-out hover:bg-teal-400 hover:text-white focus:outline-none">
+      Read More
+    </button>
+
+    <!-- Expanded Content -->
+    <div id="expanded-content" class="hidden mt-6">
+      <h3 class="text-2xl font-semibold text-red-400">How Did Audi Get Its Name?</h3>
+      <p class="text-lg text-gray-300">
+        The company's founder, August Horch, established his first automobile manufacturing company in 1899, called "August Horch & Cie." He left this company in 1909 due to conflicts with his business partners. After leaving, he founded a new company in Zwickau on 16 July 1909, originally named August Horch Automobilwerke GmbH. However, his former partners filed a lawsuit against him for trademark infringement, preventing him from using the "Horch" brand.
+      </p>
+      <p class="text-lg text-gray-300">
+        During a meeting with business friends, Franz Fikentscher’s son, studying Latin at the time, suggested "Audi" as an alternative to "Horch." Since "Horch" means "listen" in German, "Audi" carried the same meaning in Latin. The idea was enthusiastically accepted, and on 25 April 1910, the company was officially registered as Audi Automobilwerke GmbH Zwickau.
+      </p>
+
+      <h3 class="text-2xl font-semibold mt-6 text-red-400">The Meaning of Four Rings in Audi</h3>
+      <p class="text-lg text-gray-300">
+        Audi's iconic four-ring logo represents a significant period in the company’s history. On 29 June 1932, Audiwerke, Horchwerke, and Zschopauer Motorenwerke J. S. Rasmussen AG (DKW) merged to form Auto Union AG, initiated by the State Bank of Saxony. At the same time, a purchase agreement was made with Wanderer to acquire its motor vehicle division.
+      </p>
+      <p class="text-lg text-gray-300">
+        To symbolize the unity and collaboration of the four companies, a new logo was created—four interlinked rings, each representing one of the merging manufacturers. This logo signified strength and solidarity, making Auto Union AG the second-largest motor vehicle manufacturer in Germany.
+      </p>
+      <p class="text-lg text-gray-300">
+        Within Auto Union AG, brands had distinct roles: DKW focused on motorcycles and small cars, Wanderer produced midsize cars, Audi operated in the deluxe midsize segment, and Horch manufactured high-end luxury cars. Today, Audi continues to represent innovation, performance, and a legacy defined by its four rings.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for Read More Toggle -->
+<script>
+  function toggleReadMore() {
+    const expandedContent = document.getElementById("expanded-content");
+    expandedContent.classList.toggle("hidden");
+  }
+</script>
+
+<div class="flex-grow p-6 flex gap-6">
+  <!-- Sidebar -->
+  <aside class="w-1/4 bg-gray-800 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold text-teal-400 mb-4">Select an Audi Model</h3>
+    <div class="flex flex-col gap-2">
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi A3
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi A4
+      </button>
+      <button onclick="showA5Details()" class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi A5
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi A6
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi A7
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi A8
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi Q3
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi Q5
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi Q7
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi Q8
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi RS3
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi RS5
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi RS6 Avant
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi RS Q8
+      </button>
+      <button class="model-btn p-2 text-left text-gray-300 border border-gray-600 rounded-md hover:bg-gray-700">
+        Audi e-tron
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <div class="w-3/4 p-6 space-y-12">
+      <!-- Default: Year-wise Gallery -->
+      <div id="default-gallery" class="space-y-10">
+        <h2 class="text-3xl font-semibold text-teal-400 text-center">Audi Models by Year</h2>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-red-400 mb-4">2026 Audi Models</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="C:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\Screenshot 2025-06-16 164438.png" alt="2026 Audi A5" class="w-full rounded-lg shadow-md">
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-red-400 mb-4">2025 Audi Models</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="C:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\Screenshot 2025-06-16 164452.png" alt="2025 Audi A5 - 1" class="w-full rounded-lg shadow-md">
+            <img src="C:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\Screenshot 2025-06-16 164508.png" alt="2025 Audi A5 - 2" class="w-full rounded-lg shadow-md">
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-red-400 mb-4">2024 Audi Models</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="C:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\Screenshot 2025-06-16 164533.png" alt="2024 Audi A5 - 1" class="w-full rounded-lg shadow-md">
+            <img src="C:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\Screenshot 2025-06-16 164546.png" alt="2024 Audi A5 - 2" class="w-full rounded-lg shadow-md">
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-semibold text-red-400 mb-4">2023 Audi Models</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src="C:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\Screenshot 2025-06-16 164604.png" alt="2023 Audi A5 - 1" class="w-full rounded-lg shadow-md">
+            <img src="C:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\Screenshot 2025-06-16 164618.png" alt="2023 Audi A5 - 2" class="w-full rounded-lg shadow-md">
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Audi A5 Section (Visible by Default) -->
+      <div id="audi-a5-section" class="hidden space-y-8 -mt-6">
+          <!-- Header Row -->
+          <div class="flex items-center justify-between bg-gray-100 px-10 py-6 rounded-lg shadow-md border">
+              <!-- Left: Audi Logo -->
+              <div class="flex-shrink-0">
+                  <img src="C:\\Users\\Admin\\Desktop\\Dailyrevs\\dailyrevs\\cars logo\\audi a5 logo.png" alt="Audi A5 Logo" class="h-24 w-auto">
+              </div>
+
+              <!-- Right: Navigation Button -->
+              <div class="flex items-center gap-4">
+                  <a href="audi_a5_overview.html" class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 transition">
+                      Audi A5 Overview
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <div id="audi-a5-gallery" class="hidden">
+        <h2 class="text-3xl font-semibold text-teal-400 text-center">Audi A5 All Models Gallery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5L (5).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5L Image 5">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5L (6).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5L Image 6">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5L (7).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5L Image 7">
+          
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant (1).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant Image 1">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant (2).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant Image 2">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant (3).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant Image 3">
+          
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant e-hybrid Quattro B10 (1).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant e-hybrid Quattro B10 Image 1">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant e-hybrid Quattro B10 (2).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant e-hybrid Quattro B10 Image 2">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant e-hybrid Quattro B10 (3).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant e-hybrid Quattro B10 Image 3">
+          
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant Glacier White (1).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant Glacier White Image 1">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant Glacier White (2).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant Glacier White Image 2">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2025 Audi A5 Avant Glacier White (3).jpg" class="w-full rounded-lg shadow-md" alt="2025 Audi A5 Avant Glacier White Image 3">
+          
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2023 Audi A5 Sportback Competition Edition (1).jpg" class="w-full rounded-lg shadow-md" alt="2023 Audi A5 Sportback Competition Edition Image 1">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2023 Audi A5 Sportback Competition Edition (2).jpg" class="w-full rounded-lg shadow-md" alt="2023 Audi A5 Sportback Competition Edition Image 2">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2023 Audi A5 Sportback Competition Edition (3).jpg" class="w-full rounded-lg shadow-md" alt="2023 Audi A5 Sportback Competition Edition Image 3">
+          
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2023 Audi A5 Cabriolet Competition Edition (1).jpg" class="w-full rounded-lg shadow-md" alt="2023 Audi A5 Cabriolet Competition Edition Image 1">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2023 Audi A5 Cabriolet Competition Edition (2).jpg" class="w-full rounded-lg shadow-md" alt="2023 Audi A5 Cabriolet Competition Edition Image 2">
+          <img src="c:\Users\Admin\Desktop\Dailyrevs\dailyrevs\data_sc\AudiWebsite\2023 Audi A5 Cabriolet Competition Edition (3).jpg" class="w-full rounded-lg shadow-md" alt="2023 Audi A5 Cabriolet Competition Edition Image 3">
+        </div>
+      </div>  
+    </div>
+</div>
+
+<script>
+  function showA5Details() {
+    document.getElementById('default-gallery').classList.add('hidden');
+    document.getElementById('audi-a5-gallery').classList.remove('hidden');
+    document.getElementById('audi-a5-section').classList.remove('hidden');
+
+    
+  }
+
+  function toggleA5Content() {
+    const content = document.getElementById('audi-a5-content');
+    content.classList.toggle('hidden');
+  }
+</script>
+
+
+  <!-- Sticky Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-12 px-6 md:px-20 mt-auto">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+
+      <!-- Brand Info -->
+      <div>
+        <h3 class="text-xl font-bold text-white mb-3">DailyRevs</h3>
+        <p class="text-sm">Your trusted source for car reviews, specs, and insights.</p>
+        <p class="mt-4 text-sm">© 2025 DailyRevs. All rights reserved.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4 class="text-lg font-semibold text-teal-400 mb-3">Contact</h4>
+        <p class="text-sm">📍 123 Car Street, Auto City, Tamil Nadu, India</p>
+        <p class="text-sm mt-1">📞 +91 98765 43210</p>
+        <p class="text-sm mt-1">✉️ contact@dailyrevs.com</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg font-semibold text-teal-400 mb-3">Quick Links</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#about" class="hover:text-white">About Us</a></li>
+          <li><a href="#gallery" class="hover:text-white">Gallery</a></li>
+          <li><a href="#specification" class="hover:text-white">Specifications</a></li>
+          <li><a href="#Expert-Review" class="hover:text-white">Expert Review</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Signup -->
+      <div>
+        <h4 class="text-lg font-semibold text-teal-400 mb-3">Subscribe to Newsletter</h4>
+        <form id="newsletterForm" class="space-y-3">
+          <input type="email" placeholder="Enter your email" required class="w-full px-3 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-500" />
+          <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white py-2 rounded">Subscribe</button>
+        </form>
+        <p id="newsletterMsg" class="text-sm mt-2 text-green-400 hidden">Thank you for subscribing!</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Model Selection & Dynamic Content Display -->
+  <script>
+    function selectModel(model) {
+      document.querySelectorAll("span[id^='tick-']").forEach(tick => tick.classList.add("hidden"));
+      document.getElementById(`tick-${model}`).classList.remove("hidden");
+
+      const modelInfo = document.getElementById("model-info");
+      const audiA5Description = document.getElementById("audi-a5-description");
+      const imageGallery = document.getElementById("image-gallery");
+      const moreDetailsBtn = document.getElementById("more-details-btn");
+
+      audiA5Description.classList.add("hidden");
+      imageGallery.classList.add("hidden");
+      moreDetailsBtn.classList.add("hidden");
+
+      const modelsData = {
+        "audi-a3": "Audi A3 - Compact car with advanced technology and performance.",
+        "audi-a4": "Audi A4 - Premium sedan known for its sporty appeal.",
+        "audi-a5": "Audi A5 - Click 'Show Details' for more information."
+      };
+
+      modelInfo.textContent = modelsData[model] || "Click a model to see details.";
+
+      if (model === "audi-a5") {
+        audiA5Description.classList.remove("hidden");
+        moreDetailsBtn.classList.remove("hidden");
+      }
+    }
+
+    function showText() {
+      document.getElementById("audi-a5-description").classList.remove("hidden");
+      document.getElementById("more-details-btn").classList.remove("hidden");
+    }
+
+    function showImages() {
+      document.getElementById("image-gallery").classList.remove("hidden");
+    }
+
+    document.getElementById("newsletterForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      document.getElementById("newsletterMsg").classList.remove("hidden");
+    });
+  </script>
+
+</body>
+</html>
